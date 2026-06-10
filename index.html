@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal Warrior | Construction Services</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary-color: #ffcc00; /* Construction Yellow */
+            --secondary-color: #222;    /* Dark Charcoal */
+            --text-light: #ffffff;
+            --text-dark: #333;
+            --bg-light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1503387762-59df coursework-4b0a?auto=format&fit=crop&w=1350&q=80'); /* Generic construction image */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6b800;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            text-align: center;
+            background-color: var(--bg-light);
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-bottom: 5px solid var(--primary-color);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 5%;
+            text-align: center;
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .email-link {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            color: #777;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Payal Warrior</div>
+        <div>Construction Excellence</div>
+    </nav>
+
+    <section class="hero">
+        <h1>Building Your Future</h1>
+        <p>Providing high-quality construction, renovation, and infrastructure solutions with precision and integrity.</p>
+        <a href="mailto:PayalWarrior83@oceanviewest.com" class="btn">Get a Quote</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Specializations</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Residential</h3>
+                <p>Custom home building and residential remodeling tailored to your lifestyle.</p>
+            </div>
+            <div class="card">
+                <h3>Commercial</h3>
+                <p>Durable and modern commercial spaces designed for business growth.</p>
+            </div>
+            <div class="card">
+                <h3>Industrial</h3>
+                <p>Heavy-duty infrastructure and warehouse construction services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Let's Start Your Project</h2>
+        <p>Contact me today for a professional consultation.</p>
+        <br>
+        <a href="mailto:PayalWarrior83@oceanviewest.com" class="email-link">PayalWarrior83@oceanviewest.com</a>
+    </section>
+
+    <footer>
+        &copy; 2023 Payal Warrior Construction. All rights reserved.
+    </footer>
+
+</body>
+</html>
